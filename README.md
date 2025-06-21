@@ -5,7 +5,7 @@ This application is divided into two main phases:
 
 Phase 1: Member management using MongoDB.
 
-Phase 2: CSV file generation and import using arrays and SQLite.
+Phase 2: CSV file generation and import using csv files and SQLite.
 
 **Phase 1 – Member Management (MongoDB)**
 Phase 1 focuses on capturing and managing member data using MongoDB. It includes the following pages:
@@ -19,10 +19,10 @@ ID numbers must be 13 digits and unique.
 
 The date of birth is matched with the ID number.
 
-A "Cancel" button allows users to clear and reset the form.
+A "Cancel" button allows users to cancel the form and go back to the home page
 
 2. view.php
-Displays all stored members in a tabular format by fetching data from MongoDB.
+Displays all stored members in a table format by fetching data from MongoDB.
 
 **Phase 2 – File Handling & Import (SQLite)**
 Phase 2 demonstrates file generation, validation, and database import using arrays and SQLite. It includes two main operations:
@@ -41,7 +41,7 @@ Entries are randomly generated and validated to ensure uniqueness and format cor
 2. import.php
 Upload and import data from a CSV file.
 
-Reads data from either the output/output.csv file or from user-uploaded files located in the uploads/ directory.
+Reads data from either the output/output.csv file and then stores the same information in the data file in another file in the uploads folder.
 
 3. loading.php
 Handles the incremental loading of data to prevent timeouts during bulk operations.
