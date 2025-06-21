@@ -64,3 +64,38 @@ Displays the contents of the SQLite database in a table format.
 ├── /uploads/          # Folder to store uploaded CSVs
 └── /Resources/        # Includes PHP scripts, CSS, database connection, etc.
 ```
+
+**Folder Structure**
+Resources/
+**php/ — All backend logic scripts:**
+
+| File                   | Description                                      |
+| ---------------------- | ------------------------------------------------ |
+| `check_uniqueness.php` | Ensures uniqueness of data before insertion      |
+| `create_member.php`    | Handles the insertion of MongoDB member data     |
+| `generate_file.php`    | Generates CSV records                            |
+| `load_sqlite.php`      | Loads CSV file into SQLite in chunks             |
+| `manage_mango.php`     | Manages MongoDB operations                       |
+| `manage_sqlite.php`    | Manages SQLite operations (insert, read, delete) |
+| `read_database.php`    | Outputs SQLite rows for display                  |
+| `read_file.php`        | Reads CSV files line-by-line                     |
+| `upload_file.php`      | Handles uploading of CSV files into `uploads/`   |
+
+
+**css/ — Stylesheets for UI:**
+
+| File           | Description                    |
+| -------------- | ------------------------------ |
+| `generate.css` | Styles for CSV generation page |
+| `home.css`     | General layout styles          |
+| `loading.css`  | Spinner and loading bar        |
+| `member.css`   | Form styling for member page   |
+
+
+**database/**
+
+| File                  | Description                                        |
+| --------------------- | -------------------------------------------------- |
+| `csv_database.sqlite` | SQLite database used to store imported CSV entries |
+
+
