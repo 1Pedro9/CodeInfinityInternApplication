@@ -1,0 +1,42 @@
+/* Reset body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #001c41;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+/* Centered loader wrapper */
+.loader-wrapper {
+    text-align: center;
+}
+  
+/* Spinner styles */
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #444;
+    border-top: 10px solid #00bfff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+  
+/* Text */
+.loader-wrapper p {
+    font-size: 1.5em;
+    margin: 0;
+}
+  
+/* Animation keyframes */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+  
