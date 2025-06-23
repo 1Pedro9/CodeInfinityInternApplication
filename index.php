@@ -20,17 +20,19 @@
         <button><a href="database.php">See the database</a></button>
     </main>
 
-    <?php
-        if (isset($_GET['error'])) {
-            echo "
-                alert('{$_GET['error']}');
-            ";
-        } else if (isset($_GET['success'])) {
-            echo "
-                alert('{$_GET['success']}');
-            ";
-        }
-    ?>
+    <script>
+        <?php
+            if (isset($_GET['error'])) {
+                echo "
+                    alert('{$_GET['error']}');
+                ";
+            } else if (isset($_GET['success'])) {
+                echo "
+                    alert('{$_GET['success']}');
+                ";
+            }
+        ?>
+    </script>
 
 </body>
 </html>
